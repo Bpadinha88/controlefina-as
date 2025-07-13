@@ -81,7 +81,7 @@ label{color: #1f5c3f;font-size: 18px; margin: 10px 10px 10px 10px}
 #cashtotal{display: inline-block; width: 50%;background-color: #dbeed4be; text-align: center;min-height: 89px;max-width: 800px;border-bottom: solid 5px rgba(49, 51, 50, 0.555); border-radius: 10px;}
 
 @media(min-width: 319px) and (max-width: 375px){
-    #cashtotal{width: 48%;padding-top: 20px; }
+    #cashtotal{width: 47%;padding-top: 20px; }
 }
 
 @media(min-width: 1024px) and (max-width: 1439px){
