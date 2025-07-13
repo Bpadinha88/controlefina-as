@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Controlo Financeiro</title>
+</head>
+<body>
+    <header>
+        <h1>Controle suas financas</h1>
+        <nav>
+            <li><a href="login.html">Login</a></li>
+        </nav>
+    </header>
+    <main>
+        <form action="cashfr">
+                <p id="balance">Saldo disponível para planejamento:</p>             
+                <p id="account">0000</p>
+
+                <label for="cash">Adicionar ao saldo</label>
+                    <input type="number" name="cash" class="cash" id="cash1">
+            <br>
+                <label for="cash">Informe o valor do gasto</label>
+                    <input type="number" name="cash" class="cash" id="cash2">
+            <br>
+                <select name="select" id="expenses">
+                    <option id="any">Selecione o gasto</option>
+                    <option id="water">Conta da agua</option>
+                    <option id="electric">Conta de eletrecidade</option>
+                    <option id="food">Comida</option>
+                    <option id="other">Outro</option>
+                </select>
+            <br>
+            <input type="button" value="Veja seu resultado" id="btn">
+        </form>
+        <div id="response">
+            <div id="cashtotal">
+                <p>Saldo restante
+                </p>
+                <p id="numbercash">0000</p>
+            </div>
+
+            <div id="historic">
+                <p>Historico</p>
+                <p id="justificar">Faça <a href="login.html">Login</a> para obter seu historico</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
