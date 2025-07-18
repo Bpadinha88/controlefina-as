@@ -9,17 +9,14 @@
 </head>
 <body>
     <header>
-        <h1>Controle suas financas</h1>
+        <h1>Organize Suas Finanças</h1>
         <nav>
             <li><a href="login.html">Login</a></li>
         </nav>
     </header>
     <main>
         <form action="cashfr">
-                <p id="balance">Saldo disponível para planejamento:</p>             
-                <p id="account">0000</p>
-
-                <label for="cash">Adicionar ao saldo</label>
+                <label for="cash">Informe o seu saldo</label>
                     <input type="number" name="cash" class="cash" id="cash1">
             <br>
                 <label for="cash">Informe o valor do gasto</label>
@@ -30,21 +27,27 @@
                     <option id="water">Conta da agua</option>
                     <option id="electric">Conta de eletrecidade</option>
                     <option id="food">Comida</option>
-                    <option id="other">Outro</option>
+                    <option type="text" id="other">Outro</option>
                 </select>
+
+                <div id="othercamp" >
+                    <label for="othertext">Adicione um gasto a lista:</label>
+                    <input type="text" id="othertext" placeholder="Digite aqui...">
+                    <input id="otherbtn" type="button" value="Adicione" id="otherbtn">
+                </div>
             <br>
             <input type="button" value="Veja seu resultado" id="btn">
         </form>
         <div id="response">
             <div id="cashtotal">
-                <p>Saldo restante
+                <p>Próximo gasto e saldo restante
                 </p>
                 <p id="numbercash">0000</p>
             </div>
 
             <div id="historic">
                 <p>Historico</p>
-                <p id="justificar">Faça <a href="login.html">Login</a> para obter seu historico</p>
+                <p id="justify">Faça <a href="login.html">Login</a> para obter seu historico</p>
             </div>
         </div>
     </main>

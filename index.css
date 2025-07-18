@@ -30,7 +30,7 @@ form{background-color: #e6e6d6b9;border-radius: 10px;padding: 30px; }
     form{padding: 17% 8% 18% 0%;display: block;}
 }
 
-.cash{font-size: larger;font-family: 'Lato', sans-serif; background-color: #ffffffd7; border:1px solid rgba(49, 51, 50, 0.555); color: #1f5c3f;margin: 10px;padding: 15px;width: 88%;border-radius: 10px;}
+.cash{font-size: larger;font-family: 'Lato', sans-serif; background-color: #ffffffd7; border:1px solid rgba(49, 51, 50, 0.555); margin: 10px;padding: 15px;width: 88%;border-radius: 10px;color: rgb(117, 117, 117);}
 
 @media(min-width: 319px) and (max-width: 375px){
     .cash {margin: 10px 10px 10px 0px;}
@@ -40,7 +40,7 @@ form{background-color: #e6e6d6b9;border-radius: 10px;padding: 30px; }
     .cash{ width: 805px;margin: 10px 10px 10px 60px;}
 }
 
-select{font-size: larger;font-family: 'Lato', sans-serif;background-color: #ffffffd7; border:1px solid rgba(49, 51, 50, 0.555); color: #1f5c3f;margin: 10px;padding: 15px;width: 92.4%;border-radius: 10px;}
+select{font-size: larger;background-color: #ffffffd7; border:1px solid rgba(49, 51, 50, 0.555); margin: 10px;padding: 15px;width: 92.4%;border-radius: 10px; color: rgb(117, 117, 117);}
 
 select:hover{cursor: pointer;}
 
@@ -49,7 +49,7 @@ select:hover{cursor: pointer;}
 }
 
 @media(min-width: 1024px) and (max-width: 1439px){
-    select{width: 93%;}
+    select{width: 92.8%;}
 }
 
 @media(min-width: 1440px) and (max-width: 1680px){
@@ -57,6 +57,26 @@ select:hover{cursor: pointer;}
 }
 
 label{color: #1f5c3f;font-size: 18px; margin: 10px 10px 10px 10px}
+
+@media(min-width: 319px) and (max-width: 375px){
+    label{margin: 10px 10px 10px 0px;width: 100% }
+}
+
+#othercamp{ display: none; margin-top: 10px; margin-left: 5px; width: 93.5%; }
+
+#othercamp #othertext{font-size: larger;font-family: 'Lato', sans-serif;background-color: #ffffffd7; border:1px solid rgba(49, 51, 50, 0.555);margin-top: 5px;padding: 15px;width: 49%;border-radius: 10px; color: rgb(117, 117, 117);}
+
+@media(min-width: 319px) and (max-width: 375px){
+    #othercamp #othertext{ margin: 10px 10px 10px -4px; width: 93%; }
+}
+
+#othercamp #otherbtn{background-color: #d6d9dd; border: none; margin-left: 8px; padding: 9px;border-radius: 5px;}
+
+@media(min-width: 319px) and (max-width: 375px){
+    #othercamp #otherbtn{ margin-left: -2px;width: 50%;padding: 9px;}
+}
+
+#othercamp #otherbtn:hover{cursor: pointer;background-color: #1f5c3f;color: #d6d9dd;}
 
 @media(min-width: 1440px) and (max-width: 1680px){
     #response{margin: 0px 29px; padding: 53px 3% 53px 3%}
@@ -81,7 +101,7 @@ label{color: #1f5c3f;font-size: 18px; margin: 10px 10px 10px 10px}
 #cashtotal{display: inline-block; width: 50%;background-color: #dbeed4be; text-align: center;min-height: 89px;max-width: 800px;border-bottom: solid 5px rgba(49, 51, 50, 0.555); border-radius: 10px;}
 
 @media(min-width: 319px) and (max-width: 375px){
-    #cashtotal{width: 45%;padding-top: 20px; }
+    #cashtotal{width: 49%; margin-top: 10px;}
 }
 
 @media(min-width: 1024px) and (max-width: 1439px){
@@ -95,7 +115,7 @@ label{color: #1f5c3f;font-size: 18px; margin: 10px 10px 10px 10px}
 #historic{display: inline-block;width: 49.5%;background-color: #dbeed4be;text-align: center;min-height: 89px;max-width: 800px;border-bottom: solid 5px rgba(49, 51, 50, 0.555); border-radius: 10px;}
 
 @media(min-width: 319px) and (max-width: 375px){
-    #historic{width: 48%;padding-bottom: 1px;}
+    #historic{width: 50%;}
 }
 
 @media(min-width: 1024px) and (max-width: 1439px){
@@ -105,7 +125,7 @@ label{color: #1f5c3f;font-size: 18px; margin: 10px 10px 10px 10px}
 @media(min-width: 1440px) and (max-width: 1680px){
     #historic{padding:55px 10px; width: auto; margin: 10px 0px;}
 
-    #historic #justificar{text-align: left; }
+    #historic #justify{text-align: left; }
 }
 
 
