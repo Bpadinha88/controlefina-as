@@ -78,8 +78,10 @@ label{color: #1f5c3f;font-size: 18px; margin: 10px 10px 10px 10px}
 
 #othercamp #otherbtn:hover{cursor: pointer;background-color: #1f5c3f;color: #d6d9dd;}
 
+#reponse{justify-content: space-between;}
+
 @media(min-width: 1440px) and (max-width: 1680px){
-    #response{margin: 0px 29px; padding: 53px 3% 53px 3%}
+    #response{margin: 0px 29px; padding: 53px 3% 53px 3%; justify-content: space-between;}
 }
 
 #btn{background-color: #d6d9dd; border: none; display: block; margin: 10px auto 10px 30px;padding: 8px;border-radius: 5px;}
