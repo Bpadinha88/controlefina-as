@@ -1,17 +1,22 @@
-    const expense = document.getElementById('expenses');
-function result(){
+document.getElementById('btn').addEventListener('click', result);
+document.getElementById('otherbtn').addEventListener('click', addtext);
 
-        const money = document.getElementsByClassName('cash');
-    const nmoney = document.getElementById('numbercash');
+document.getElementById("arrow").addEventListener("click", function () {
+    document.getElementById("expenses").scrollIntoView({ behavior: "smooth" });
+  });
 
-    const money1 = document.getElementById('cash1').value;
-    const money2 = document.getElementById('cash2').value;
-    const subtracao = Number(money1)-Number(money2);
-    
-    const error = document.getElementById('any');
-
+let expense = document.getElementById('expenses');
+let others = document.getElementById('other');
+let otherscamp = document.getElementById('othercamp');
+let money = document.getElementsByClassName('cash');
+let nmoney = document.getElementById('result');
+let error = document.getElementById('any');
+function result(){ 
     const valueOption = expense.value;
     const textOption = expense.options[expense.selectedIndex].text;
+    const money1 = document.getElementById('cash1').value;
+    const money2 = document.getElementById('cash2').value;
+    const subtracao = Number(money1)-Number(money2); 
 
     for(let i = 0; i < money.length; i++ ){
         if(money[i].value.length == 0 || Number(money[i].value) === 0){
@@ -37,14 +42,12 @@ function result(){
         console.log('[ERRO]Opção "outro" não pode ser selecionada')
     }else{
     console.log(`O gasto escolhido foi ${valueOption}`)
-    nmoney.innerHTML = `Com a sua ${textOption.toLowerCase()}, você ficará com ${subtracao}.`
     console.log(subtracao)
+    nmoney.innerHTML = `Com a sua ${textOption.toLowerCase()}, você ficará com ${subtracao}.`
+    nmoney.style.display = 'block';
     }
 
 }
-
-const others = document.getElementById('other');
-let otherscamp = document.getElementById('othercamp');
 
 expense.addEventListener('change', function(){
     if(expense.value === others.value){
@@ -58,18 +61,16 @@ function addtext(){
     const otherstext = document.getElementById('othertext');
     const textvalue = otherstext.value
         
-            if(textvalue.length == 0){
-                alert('[ERRO]Precisa escrever um gasto')
-            }else if(Number(textvalue)){
-                alert('[ERRO]Não pode escrever numeros')        
-            }else{
-                let textupper = textvalue.charAt(0).toUpperCase() + textvalue.slice(1);
+    if(textvalue.length == 0){
+        alert('[ERRO]Precisa escrever um gasto')
+    }else if(Number(textvalue)){
+        alert('[ERRO]Não pode escrever numeros')        
+    }else{
+        let textupper = textvalue.charAt(0).toUpperCase() + textvalue.slice(1);
 
-                let newOption = new Option(textupper, textupper,);
-                expense.add(newOption, other); 
-            }
-        }
+        let newOption = new Option(textupper, textupper,);
+        expense.add(newOption, other); 
+    }
+}
 
 
-document.getElementById('btn').addEventListener('click', result);
-document.getElementById('otherbtn').addEventListener('click', addtext);

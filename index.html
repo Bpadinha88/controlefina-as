@@ -9,21 +9,33 @@
 </head>
 <body>
     <header>
+        <img id="logo" src="logo.png" alt="logo.png">
         <h1>Organize Suas Finanças</h1>
         <nav>
             <li><a href="login.html">Login</a></li>
         </nav>
     </header>
     <main>
+        <div id="div-coin">
+            <div id="coin">€</div>
+        </div>
+        
+        <div id="start">
+            <p>Seja muito <strong>bem-vindo ao nosso site</strong>,<br>o nosso objetivo é ajudar-lhe a organizar da melhor forma a sua vida financeira, melhorando a sua saúde financeira e proporcionando-lhe mais previsibilidade e conhecimento sobre quais são os seus maiores gastos, com observação das despesas fixas e variáveis que mais impactam na sua realidade financeira. Vamos iniciar esta jornada de saúde financeira connosco?</p> 
+
+            <p id="test">Teste abaixo nossa ferramenta!</p>
+            <p id="arrow">↓</p>
+        </div>
         <form action="cashfr">
-                <label for="cash">Informe o seu saldo</label>
+                <p>Faça <a href="login.html">login</a> para aceder a todo site!</p>
+                <label for="cash">Saldo Inicial</label>
                     <input type="number" name="cash" class="cash" id="cash1">
             <br>
-                <label for="cash">Informe o valor do gasto</label>
+                <label for="cash">Valor Gasto</label>
                     <input type="number" name="cash" class="cash" id="cash2">
             <br>
                 <select name="select" id="expenses">
-                    <option id="any">Selecione o gasto</option>
+                    <option id="any">Natureza do seu gasto</option>
                     <option id="water">Conta da agua</option>
                     <option id="electric">Conta de eletrecidade</option>
                     <option id="food">Comida</option>
@@ -36,21 +48,15 @@
                     <input id="otherbtn" type="button" value="Adicione" id="otherbtn">
                 </div>
             <br>
-            <input type="button" value="Veja seu resultado" id="btn">
-        </form>
-        <div id="response">
             <div id="cashtotal">
-                <p>Próximo gasto e saldo restante
+                <p id="resultext"> Saldo remanescente:
                 </p>
-                <p id="numbercash">0000</p>
+                <p id="result">0000</p>
             </div>
-
-            <div id="historic">
-                <p>Historico</p>
-                <p id="justify">Faça <a href="login.html">Login</a> para obter seu historico</p>
-            </div>
-        </div>
+        </form>
+        <input type="button" value="Veja seu resultado" id="btn">
     </main>
+
     <footer>
 
     </footer>
